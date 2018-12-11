@@ -1,0 +1,5 @@
+node_modules
+react_bin
+electron_src/env.json
+dist
+.DS_Store

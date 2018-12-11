@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    color: rgb(182, 182, 182);
+    margin-bottom: 0px;
+}
+
+a {
+    color: lightblue;
+}
+a:hover {
+    color: rgb(216, 92, 92);
+}
+
+.card {
+    margin-top: 0px;
+    background-color: rgb(70, 70, 70);
+    border-width: 0px;
+    border-left-width: 3px ;
+    border-color: rgb(34, 179, 234); 
+    border-style: solid;
+    color: white;
+    padding: 10px;
+    font-family: Arial, Helvetica;
+ 
+}
+
+.logo-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.app-name > span{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.settings-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.startup-button{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+}
+
+.quit-button {
+    background-color: rgb(163, 26, 26);
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    color: aliceblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quit-button:hover {
+    background-color: rgb(150, 35, 35);
+}
+

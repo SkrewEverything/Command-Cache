@@ -1,0 +1,106 @@
+.logo-name-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.logo-name{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app-name > span{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.info-button {
+    color: white;
+    font-size: 18px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.info-button:hover{
+    background-color: grey;
+    border-color: grey;
+}
+
+.search-box {
+    width:100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding:20px;
+    height:20px;
+    background-color:grey;
+    border:none;
+    border-radius:10px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.search-box:focus {
+    outline:none;
+}
+
+.search-box::placeholder {
+    color: rgb(41, 41, 41);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.category-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(40, 40, 40);
+    user-select: none;
+    padding: 20px;
+    padding-top: 0px;
+
+}
+
+.category {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(232, 79, 100);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: rgb(56, 56, 56);
+    font-family: Arial, Helvetica;
+    border: 1px solid rgb(232, 79, 100, 0.2);
+}
+
+.category:hover {
+    background-color: rgba(232, 79, 100, 0.8);
+    color: rgb(40, 40, 40);
+}
+
+.category-active {
+    background-color: rgba(232, 79, 100, 0.8);
+    color: rgb(40, 40, 40);
+    font-weight: bolder;
+    
+
+}

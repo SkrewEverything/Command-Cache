@@ -1,0 +1,108 @@
+.outer-container{
+    background-color: rgb(72, 72, 72);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.time{
+    float: right; 
+    font-family: 'helvetica';
+    font-size: 12px;
+    font-weight: normal;
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px; 
+    color: rgb(173, 173, 173);
+}
+
+.command {
+    background-color: rgb(54, 54, 54);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    word-break: break-all;
+    color: rgb(229, 196, 83);
+}
+
+.directory {
+    font-family: 'helvetica';
+    font-size: 12px;
+    font-weight: bold;
+    padding: '15px';
+    padding-top: '0px';
+    padding-bottom: 0px;
+    color: rgb(173, 173, 173);
+}
+
+.horizontal-line {
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+    background-color: #9FA2A4;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+    padding: 10px;
+    font-family: 'helvetica';
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    border-radius: 20px;
+    user-select: none;
+}
+.copy-button {
+    background-color: rgb(56, 56, 56);
+    color: rgb(70, 189, 223);
+    border: 1px solid rgb(70, 189, 223, 0.2);
+}
+
+.copy-button:hover {
+    background-color:rgb(70, 189, 223);
+    color: rgb(56, 56, 56);
+}
+
+.save-button {
+    background-color: rgb(56, 56, 56);
+    color: rgb(229, 114, 85);
+    border: 1px solid rgb(229, 114, 85, 0.2);
+}
+
+.save-button:hover {
+    background-color:rgb(229, 114, 85);
+    color: rgb(56, 56, 56);
+}
+
+.save-button-active {
+    background-color:rgb(229, 114, 85);
+    border: 1px solid rgb(229, 114, 85, 0.2);
+    color: rgb(56, 56, 56);
+    font-weight: bold;
+}
+
+.execute-button {
+    background-color: rgb(56, 56, 56);
+    color: rgb(82, 210, 115);
+    border: 1px solid rgb(82, 210, 115, 0.2);
+}
+
+.execute-button:hover {
+    background-color:rgb(82, 210, 115);
+    color: rgb(56, 56, 56);
+}

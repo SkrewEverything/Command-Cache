@@ -1,0 +1,51 @@
+{
+  "name": "command-cache",
+  "version": "1.0.0",
+  "description": "Logs a detailed history of executed terminal commands for easier access.",
+  "homepage": "https://github.com/SkrewEverything/Command-Cache",
+  "main": "electron_src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo '{\"env\":\"dev\"}' > electron_src/env.json; electron .",
+    "build": "webpack --mode production",
+    "start:server": "webpack-dev-server --open --hot --mode development",
+    "pack": "echo '{\"env\":\"dev\"}' > electron_src/env.json;electron-builder --dir",
+    "dist": "echo '{\"env\":\"prod\"}' > electron_src/env.json;electron-builder",
+    "dist:all": "echo '{\"env\":\"prod\"}' > electron_src/env.json;electron-builder -ml"
+  },
+  "build": {
+    "appId": "com.skreweverything.command-cache",
+    "productName": "Command Cache",
+    "mac": {
+      "category": "public.app-category.system"
+    },
+    "linux" : {
+      "category": "System",
+      "target":["AppImage", "deb", "rpm"]
+    }
+  },
+  "author": "SkrewEverything <me@skreweverything.com> (https://skreweverything.com/)" ,
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "electron": "^3.0.9",
+    "electron-builder": "^20.38.2",
+    "electron-devtools-installer": "^2.2.4",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
