@@ -24,6 +24,13 @@ Provides data and features which terminals doesn't provide. Like:
 
 - The command should be precisly selected with a mouse which is sometimes frustrating.
 
+## ScreenShots
+
+![](https://i.imgur.com/Va9fDzu.png)
+
+![](https://i.imgur.com/czpdFjG.png)
+
+![](https://i.imgur.com/AujiEFd.png)
 
 ## Installation
 
