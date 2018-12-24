@@ -1,5 +1,6 @@
 const { ipcMain, clipboard } = require('electron')
 const { execFile, spawn } = require('child_process');
+const pjson = require('../package.json');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
@@ -18,7 +19,7 @@ ipcMain.on('execute-command', (event, data) => {
         if (process.platform == 'darwin') {
             let executeScriptPath = path.join(__dirname, 'scripts/executeLinux.sh');
             let dir = `\\"${data.dir}\\"`
-            let command = `\\"${data.command}\\"`
+            let command = `${data.command}`
             console.log(dir);
             let ch = spawn('bash', ['-c', `osascript -e 'tell application "Terminal" to do script "cd ${dir};${command}"'`], { detached: true });
             ch.unref();
@@ -27,7 +28,7 @@ ipcMain.on('execute-command', (event, data) => {
         else if (process.platform == 'linux') {
             let executeScriptPath = path.join(__dirname, '/scripts/executeLinux.sh');
             let dir = `\\"${data.dir}\\"`
-            let command = `\\"${data.command}\\"`
+            let command = `${data.command}`
             let ch = spawn('bash', ['-c', `x-terminal-emulator -e "cd ${dir};${command};$SHELL"`], { detached: true });
             ch.unref();
         }
@@ -135,6 +136,7 @@ ipcMain.on('request-versions', (event, data) => {
     versions.nodejs = process.versions.node;
     versions.chrome = process.versions.chrome;
     versions.electron = process.versions.electron;
+    versions.app = pjson.version;
     event.sender.send('response-versions', versions);
 })
 

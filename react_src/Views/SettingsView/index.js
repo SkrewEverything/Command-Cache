@@ -62,7 +62,7 @@ class App extends React.Component{
                         <span style={{ color: 'rgb(70, 96, 172' }}>Command</span>
                         <span>\ </span>
                         <span style={{ color: 'rgb(187, 75, 66' }}>Cache</span>
-                        <span style={{color:'grey', fontSize:'12px'}}> v1.0.0</span>
+                        <span style={{ color: 'grey', fontSize: '12px' }}> {this.state.versions.app}</span>
                     </div>
                 </div>
                 

@@ -1,6 +1,6 @@
 {
   "name": "command-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Logs a detailed history of executed terminal commands for easier access.",
   "homepage": "https://github.com/SkrewEverything/Command-Cache",
   "main": "electron_src/main.js",
